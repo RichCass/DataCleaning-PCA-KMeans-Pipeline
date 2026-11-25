@@ -41,7 +41,7 @@ Plots for the wine dataset are provided beneath as examples. As it is known ther
 
 ![2D K-Means Cluster Analysis](kmeans_2d.png)
 
-![3D K-Means Cluster Analysis](kmeans_3d.png
+![3D K-Means Cluster Analysis](kmeans_3d.png)
 
 ### 3. `print_centres_labels`
 Prints the coordinates of the cluster centres as well as the label (or cluster number) for each observation.
