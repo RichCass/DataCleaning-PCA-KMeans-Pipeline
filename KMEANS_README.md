@@ -9,7 +9,7 @@ Whilst KMEANS can generally be performed for any number of explanatory variables
 K-means has many real-world applications including customer segmentation, outlier detection and medical diagnostics. 
 
 ## Input:
-The dataset must have been cleaned using the companion DataCleaning class from the repository before creating an instance of the KMEANS class. Unless there are only two or three features, using the companion PCA class beforehand is also recommended in order to reduce the dimensionality whilst retaining most of the variation in the data.
+The dataset must have been cleaned using the companion DataCleaning class from the repository before creating an instance of the KMEANS class. Unless there are only two or three features, using the companion PCA class beforehand is also recommended, in order to reduce the dimensionality whilst retaining most of the variation in the data.
 
 Creating an instance of the KMEANS class requires inputting the dataset in the form of a NumPy array, as well as entering the required number of clusters (must be at least 2) and the number of dimensions to plot (must be 2 or 3, defaulted to 2). There is also an option to insert a random seed (`random_state`). If this isn’t left as `None`, Python’s random number generator will pick identical starting coordinates for the cluster centres whenever it runs the algorithm on the same dataset.
 
