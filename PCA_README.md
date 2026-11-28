@@ -64,7 +64,7 @@ The first three methods packaged into one for simpler processing.
 This method produces a side-by-side ‘elbow plot’ and ‘variance explained by each principal component’ plot. They inform the selection of how many principal components to adopt.
 
 * **Elbow plot:** this displays the singular values squared (proportional to variance) for each component in descending order. Components are selected up to the point where the difference in vertical height between successive plotted points starts to become small (the elbow point).  
-* **Variance Explained by Each Principal Component:** an alternate presentation of the elbow plot, plotting the cumulative variance explained for each component. To translate the singular value into variances
+* **Variance Explained by Each Principal Component:** an alternate presentation of the elbow plot, plotting the cumulative variance explained for each component. To translate the singular values into variances
 
 $$\text{Var} = \frac{s^2}{\text{degrees of freedom}}$$
 
