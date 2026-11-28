@@ -45,7 +45,7 @@ A short mathematical proof of how $$\bar{X}V$$ is the projection that means the 
 
 If $$\{Z}$$ is the matrix that is a transformation of $$\bar{X}$$, we require that
 
-$$Z^T Z = s^2$$
+$$Z^T Z = \Sigma^2$$
 
 Using the transformation $$Z = \bar{X}V$$
 
