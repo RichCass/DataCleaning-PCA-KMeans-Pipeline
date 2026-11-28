@@ -20,7 +20,7 @@ The first step is to centre and scale the pre-cleaned input dataset. In terms of
 
 $$\bar{X} = \frac{X - X.\text{mean}()}{X.\text{std}()}$$
 
-Where X̄ is the centred and scaled dataset and X is the input. Every value has its column mean subtracted from it and the result is then divided by the column standard deviation. This is performed using the Pandas library.
+Where $$\bar{X}$$ is the centred and scaled dataset and $$\{X}$$ is the input. Every value has its column mean subtracted from it and the result is then divided by the column standard deviation. This is performed using the Pandas library.
 
 The reason for this is to stop the PCA process prioritising features that have higher absolute values and variation.
 
