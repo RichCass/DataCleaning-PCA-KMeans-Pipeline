@@ -5,7 +5,7 @@ Whilst this Readme demonstrates some outputs using a wine measurements dataset e
 The primary purpose of Principal Components Analysis is to reduce the dimensionality of a dataset. Simplifying the number of features into a smaller number of dimensions that still includes most of the same variation makes subsequent modelling such as regression or K-means clustering much more straightforward.
 
 ## Input:
-The input dataset should be in the form of a Pandas DataFrame and created as an instance of the `PCA` class. It should have been passed through the separate `DataCleaning` class beforehand.
+The input dataset should be in the form of a Pandas DataFrame and created as an instance of the `PCA` class. It should have been passed through the companion `DataCleaning` class beforehand.
 
 As part of the initialisation method, a copy of the DataFrame is taken to prevent `SettingWithCopy` warnings. Empty NumPy arrays are created for the centred and scaled dataset, the output of the Singular Value Decomposition (SVD), as well as the principal components matrix.
 
