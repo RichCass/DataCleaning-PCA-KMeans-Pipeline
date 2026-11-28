@@ -2,7 +2,7 @@
 The `DataCleaning` class is general and has been robustly built to handle any messy dataset. It creates a Pandas DataFrame that consists of all numeric columns, without unwanted duplicates and zero `NaN` values.
 
 ## Purpose:
-For dimensionality reduction methods like PCA, and clustering methods like K-means to be most effective, input data needs to be in the best condition.
+For dimensionality reduction methods like PCA and clustering methods like K-means to be effective, input data needs to be in a suitable condition.
 
 ### What is required of the dataset:
 * All numeric columns
