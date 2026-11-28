@@ -27,7 +27,7 @@ The reason for this is to stop the PCA process prioritising features that have h
 ### 2. `SVD`
 This method comes from the `numpy.linalg` library. The centred and scaled dataset, $$\bar{X}$$, is decomposed into the following three arrays
 * $$\{U}$$ - the eigenvectors of $$\bar{X}\bar{X}^T$$
-* $$\{s}$$ - the singular values
+* $$\Sigma$$ - the singular values
 * $$\{V}^T$$ - $$\{V}$$ gives the eigenvectors of $$\bar{X}^T\bar{X}$$, the covariance matrix of $$\bar{X}$$. $$\{V}^T$$ is the transpose of $$\{V}$$
 
 The `full_matrices=False` argument is used for SVD to save memory and computation time.
