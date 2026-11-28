@@ -49,11 +49,11 @@ $$Z^T Z = \Sigma^2$$
 
 Using the transformation $$Z = \bar{X}V$$
 
-$$(\bar{X}V)^T(\bar{X}V) = s^2 \implies V^T \bar{X}^T \bar{X} V = s^2$$
+$$(\bar{X}V)^T(\bar{X}V) = \Sigma^2 \implies V^T \bar{X}^T \bar{X} V = s^2$$
 
 As $$\bar{X} = U \Sigma V^T$$ (Singular Value Decomposition)
 
-$$V^T (U \Sigma V^T)^T (U \Sigma V^T) V = s^2 \implies V^T V \Sigma^T U^T U \Sigma V^T V = s^2$$
+$$V^T (U \Sigma V^T)^T (U \Sigma V^T) V = s^2 \implies V^T V \Sigma^T U^T U \Sigma V^T V = \Sigma^2$$
 
 Because V and U are semi-orthogonal, $$V^T V = U^T U = I$$, and the two sides are equal.
 
