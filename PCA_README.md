@@ -55,7 +55,7 @@ As $$\bar{X} = U \Sigma V^T$$ (Singular Value Decomposition)
 
 $$V^T (U \Sigma V^T)^T (U \Sigma V^T) V = \Sigma^2 \implies V^T V \Sigma^T U^T U \Sigma V^T V = \Sigma^2$$
 
-Because V and U are semi-orthogonal, $$V^T V = U^T U = I$$, and the two sides are equal.
+Because $$\{V}$$ and $$\{U}$$ are semi-orthogonal, $$V^T V = U^T U = I$$, and the two sides are equal.
 
 ### 4. `fit_transform` (master method)
 The first three methods packaged into one for simpler processing.
