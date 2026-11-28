@@ -102,7 +102,7 @@ For the wine measurement dataset
 
 The magnitude of the arrow vector indicates how strongly they are represented in the top two principal components. In quadrant 2 (top left) the wines have high values of alcohol, proline and phenols. In quadrant 3 (bottom left), the wines have high values of OD and Hue. It’s interesting that there are no arrows to the right but plenty of datapoints. These have very low values of the features that have arrows pointing to the left.
 
-## Library Functions Required:
+## Library functions required:
 ```python
 import pandas as pd
 import numpy as np
@@ -111,5 +111,5 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 ```
 
-## Useful Extensions
+## Useful extensions
 * Adding rotation sliders for the 3D scatterplots
