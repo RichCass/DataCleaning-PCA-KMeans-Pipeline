@@ -7,7 +7,7 @@ The primary purpose of Principal Components Analysis is to reduce the dimensiona
 ## Input:
 The input dataset should be in the form of a Pandas DataFrame and created as an instance of the `PCA` class. It should have been passed through the companion `DataCleaning` class beforehand.
 
-As part of the initialisation method, a copy of the DataFrame is taken to prevent `SettingWithCopy` warnings. Empty NumPy arrays are created for the centred and scaled dataset, the output of the Singular Value Decomposition (SVD), as well as the principal components matrix.
+As part of the initialisation method, a copy of the DataFrame is taken to prevent `SettingWithCopy` warnings. Empty arrays are created for the centred and scaled dataset, the output of the Singular Value Decomposition (SVD), as well as the principal components matrix.
 
 Besides initialisation, there are seven methods. Some perform the PCA itself, whilst others aid the determination of how many principal components (dimensions) to select. The final biplot method shows how the initial features are represented by the principal components. 
 
