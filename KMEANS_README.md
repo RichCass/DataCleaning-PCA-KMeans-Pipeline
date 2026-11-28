@@ -39,9 +39,9 @@ Depending on how many dimensions are chosen to be plotted when the object is cre
 
 Plots for the wine dataset are provided beneath as examples. As it is known there are three wine types, three clusters are selected. The first four principal components are used, but only the first two or three are shown on the graphs.
 
-![2D K-Means Cluster Analysis](kmeans_2d.png)
+<img src="kmeans_2d.png" width="700" alt="2D K-Means Cluster Analysis">
 
-![3D K-Means Cluster Analysis](kmeans_3d.png)
+<img src="kmeans_3d.png" width="700" alt="3D K-Means Cluster Analysis">
 
 ### 3. `print_centres_labels`
 Prints the coordinates of the cluster centres as well as the label (or cluster number) for each observation.
