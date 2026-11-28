@@ -25,29 +25,29 @@ Where $$\bar{X}$$ is the centred and scaled dataset and $$\{X}$$ is the input. E
 The reason for this is to stop the PCA process prioritising features that have higher absolute values and variation.
 
 ### 2. `SVD`
-This method comes from the `numpy.linalg` library. The centred and scaled dataset, X̄, is decomposed into the following three arrays
-* U - the eigenvectors of $$\bar{X}\bar{X}^T$$
-* s - the singular values
-* VT - V gives the eigenvectors of $$\bar{X}^T\bar{X}$$, the covariance matrix of $$\bar{X}$$. VT is the transpose of V
+This method comes from the `numpy.linalg` library. The centred and scaled dataset, $$\bar{X}$$, is decomposed into the following three arrays
+* $$\{U}$$ - the eigenvectors of $$\bar{X}\bar{X}^T$$
+* $$\{s}$$ - the singular values
+* $$\{V}^T$$ - $$\{V}$$ gives the eigenvectors of $$\bar{X}^T\bar{X}$$, the covariance matrix of $$\bar{X}$$. $$\{V}^T$$ is the transpose of $$\{V}$$
 
 The `full_matrices=False` argument is used for SVD to save memory and computation time.
 
 ### 3. `transform`
-The transformation of X̄ to obtain the PCA matrix, Z, is
+The transformation of $$\bar{X}$$ to obtain the PCA matrix, $$\{Z}$$, is
 
 $$Z = \bar{X}V$$
 
-Where V is the transpose of $$V^T$$ from the second method. This transformation projects X̄ onto the basis of the eigenvectors in V, rotating it so that it points in the directions of maximum variance. This allows the selection of only the principal components that explain the majority of the variation in the original dataset.
+Where $$\{V}$$ is the transpose of $$V^T$$ from the second method. This transformation projects $$\bar{X}$$ onto the basis of the eigenvectors in $$\{V}$$, rotating it so that it points in the directions of maximum variance. This allows the selection of only the principal components that explain the majority of the variation in the original dataset.
 
-There is another way to think about this. By finding a transformation to X̄ that would make the covariance matrix diagonal and equal to the singular values squared, inter-column variances and multicollinearity would be eliminated. If there is only within-column variances, just the handful of new dimensions with the highest variation can be included in subsequent analysis.
+There is another way to think about this. By finding a transformation to $$\bar{X}$$ that would make the covariance matrix diagonal and equal to the singular values squared, inter-column variances and multicollinearity would be eliminated. If there is only within-column variances, just the handful of new dimensions with the highest variation can be included in subsequent analysis.
 
-A short mathematical proof of how X̄V is the projection that means the covariance matrix will be diagonal and equal to the singular values squared is given below as an aside
+A short mathematical proof of how $$\bar{X}V$$ is the projection that means the covariance matrix will be diagonal and equal to the singular values squared is given below as an aside
 
-If Z is the matrix that is a transformation of X̄, we require that
+If $$\{Z}$$ is the matrix that is a transformation of $$\bar{X}$$, we require that
 
 $$Z^T Z = s^2$$
 
-Using the transformation Z = X̄V
+Using the transformation $$Z = \bar{X}V$$
 
 $$(\bar{X}V)^T(\bar{X}V) = s^2 \implies V^T \bar{X}^T \bar{X} V = s^2$$
 
