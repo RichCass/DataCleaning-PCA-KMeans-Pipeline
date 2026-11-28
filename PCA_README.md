@@ -28,7 +28,7 @@ The reason for this is to stop the PCA process prioritising features that have h
 This method comes from the `numpy.linalg` library. The centred and scaled dataset, X̄, is decomposed into the following three arrays
 * U - the eigenvectors of $$\bar{X}\bar{X}^T$$
 * s - the singular values
-* VT - V gives the eigenvectors of $$\bar{X}^T\bar{X}$$, the covariance matrix of X̄. VT is the transpose of V
+* VT - V gives the eigenvectors of $$\bar{X}^T\bar{X}$$, the covariance matrix of $$\bar{X}$$. VT is the transpose of V
 
 The `full_matrices=False` argument is used for SVD to save memory and computation time.
 
